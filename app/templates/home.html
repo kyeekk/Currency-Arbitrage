@@ -1,10 +1,32 @@
 {% extends "base.html" %}
 
 {% block main %}
-<h1>Arbitrage</h1>
-<p class="lead">This is the webpage for our arbitrage.Use the header to navigate</p>
+<div class= "container-fluid">
+    <h1>CURRENCY ARBITRAGE</h1>
 
+    <br>
 
-<a href = "{{url_for('home')}}"
-<button type="submit" id = "View">Update</button></a>
+    <h3><u>What is an arbitrage?</u></h3>
+    <p class="text-justify">
+        Arbitrage is the strategy of taking advantage of price differences in different markets for the same asset. 
+        For it to take place, there must be a situation of at least two equivalent assets with differing prices. 
+        In essence, arbitrage is a situation where a trader can profit from the imbalance of asset prices in different markets. 
+        The simplest form of arbitrage is purchasing an asset in the market where the price is lower and simultaneously selling the 
+        asset in the market where the asset’s price is higher. Arbitrage is a widely used trading strategy, and probably one of the oldest trading
+        strategies to exist. Traders who engage in the strategy are called arbitrageurs. The concept is closely related to the market efficiency 
+        theory. The theory states that for markets to be perfectly efficient, there must be no arbitrage opportunities – all equivalent assets
+        should converge to the same price. The convergence of the prices in different markets measures market efficiency.
+    </p>
+
+    <br>
+
+    <h3><u>What is a currency arbitrage?</u></h3>
+    <p class="text-justify">
+        A currency arbitrage is a forex strategy in which a currency trader takes advantage of different spreads offered by brokers for a 
+        particular currency pair by making trades. Different spreads for a currency pair imply disparities between the bid and ask prices. 
+        Currency arbitrage involves buying and selling currency pairs from different brokers to take advantage of the miss priced rates. 
+    </p>
+
+</div>
+
 {% endblock %}

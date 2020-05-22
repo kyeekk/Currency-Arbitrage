@@ -4,12 +4,19 @@
 <form action="{{ url_for('Convert') }}" method="post" enctype="multipart/form-data">
         {{ form.csrf_token }}
         <div class="form-group">
+            {{ form.amount.label}} {{ form.amount(class="form-control", placeholder="$0.00" )}}
+        </div>
+
+        <div class="form-group">
             {{ form.currencies.label}} {{ form.currencies(class="form-control") }}
         </div>
-<div class="form-group">
+
+        <div class="form-group">
             {{ form.currencies1.label}} {{ form.currencies1(class="form-control") }}
         </div>
-    <button type="submit" id="button">Get Rate</button>
+
+        <br><br>
+    <button type="submit" id="button" class="btn-convert">Get Rate</button>
 </form>
 
 <p>Exchange Rate: {{rate}} </p>

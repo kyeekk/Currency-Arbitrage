@@ -5,5 +5,10 @@ from wtforms.validators import DataRequired, Email
 
 
 class Form(FlaskForm):
-    currencies = SelectField("Currency 1", choices = [('USD', 'USD'),('EUR', 'EUR'),('GBP', 'GBP'),('AUD', 'AUD'),('NZD', 'NZD'),('JMD', 'JMD'),('ZAR', 'ZAR'),('CAD', 'CAD'),('CHF', 'CHF'),('JPY', 'JPY')])
-    currencies1 = SelectField("Currency 2",  choices = [('USD', 'USD'),('EUR', 'EUR'),('GBP', 'GBP'),('AUD', 'AUD'),('NZD', 'NZD'),('JMD', 'JMD'),('ZAR', 'ZAR'),('CAD', 'CAD'),('CHF', 'CHF'),('JPY', 'JPY')])
+    amount = TextField('Amount: ')
+    currencies = SelectField("From: ", choices = [('USD', 'United States Dollar'),('EUR', 'Euro'),('GBP', 'British Pound'),
+                        ('AUD', 'Australian Dollar'),('NZD', 'NZD'),('JMD', 'Jamaican Dollar'),('ZAR', 'ZAR'),('CAD', 'Canadian Dollar'),
+                        ('CHF', 'Swiss Franc'),('JPY', 'Japanese Yen')])
+    currencies1 = SelectField("To: ", choices = [('USD', 'United States Dollar'),('EUR', 'Euro'),('GBP', 'British Pound'),
+                        ('AUD', 'Australian Dollar'),('NZD', 'NZD'),('JMD', 'Jamaican Dollar'),('ZAR', 'ZAR'),('CAD', 'Canadian Dollar'),
+                        ('CHF', 'Swiss Franc'),('JPY', 'Japanese Yen')])

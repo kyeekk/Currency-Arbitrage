@@ -2,6 +2,23 @@ body {
     padding-top: 5rem;
 }
 
+.custom {
+background-color: mediumblue;
+}
+
+.text-cust{
+font-size: 23px;
+}
+
+.tab{
+margin-right: 1em;
+}
+
+.btn-convert{
+background-color: blue;
+font-size: 17px;
+}
+
 #words{
 font-weight:bold;
 }
