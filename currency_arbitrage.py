@@ -13,6 +13,7 @@ rates = [
 ]
 
 currencies = ('JMD', 'USD', 'CAD', 'GBP', 'EUR', 'TTD', 'KYD', 'CHF')
+print(currencies)
 
 
 def negate_logarithm_convertor(graph: Tuple[Tuple[float]]) -> List[List[float]]:

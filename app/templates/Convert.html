@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block main %} 
+<h1 id = "center">Conversion</h1>
+<form action="{{ url_for('Convert') }}" method="post" enctype="multipart/form-data">
+        {{ form.csrf_token }}
+        <div class="form-group">
+            {{ form.currencies.label}} {{ form.currencies(class="form-control") }}
+        </div>
+<div class="form-group">
+            {{ form.currencies1.label}} {{ form.currencies1(class="form-control") }}
+        </div>
+    <button type="submit" id="button">Get Rate</button>
+</form>
+
+<p>Exchange Rate: {{rate}} </p>
+{% endblock %}
