@@ -9,9 +9,9 @@ base_url = "https://www.freeforexapi.com/api/live?pairs="
 
 currencies = ('JMD', 'USD', 'CAD', 'GBP', 'EUR', 'TTD', 'KYD', 'CHF')
 
-rates_req = requests.get(base_url+ currencies[1] + currencies[0])
+rates_req = requests.get(base_url+ currencies[1] + currencies[0] +"," + "JMDCAD" )
 jmd_rate = rates_req.json()
-print(jmd_rate)
+
 
 rates = [
     [1, 140.0167, 99.9917, 175.0981, 154.4037, 20.7681, 170.7521, 144.01687],
